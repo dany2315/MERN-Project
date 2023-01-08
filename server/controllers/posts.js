@@ -1,18 +1,16 @@
-import PostMessage from "../models/postMessage.js "
+import Voiture from '../models/postVoiture.js'
 
 
-export const getPosts = async (req,res)=>{
+export const getvoitures = (req,res) => {
     try {
-       const postMessages = await PostMessage.find();
-
-
-        res.statut(200);json(postMessages);
-
+       res
+    
+       
     } catch (error) {
-        res.statut(404).json({message:error.message})
+        res.status(404).json({message:error.message});
     }
 }
 
 export const createPost = (req,res)=>{
-    res.sebd('you create post')
+    res.send('you create post');
 }  

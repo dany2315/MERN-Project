@@ -1,15 +1,15 @@
 import express from 'express'
 import cors from 'cors';
 import mongoose from 'mongoose'
-import bodyParser from 'body-parser';
-import postRoutes from './routes/posts.js';
+import morgan from 'morgan';
+import routes from './routes/posts.js';
 
 const app = express() 
 
-app.use('/posts',postRoutes)
+app.use('/api',routes)
+app.use(morgan('dev'))
 
-app.use(bodyParser.json({limit:"30mb",extended:true}))
-app.use(bodyParser.urlencoded({limit:"30mb",extended:true}))
+app.use(express.json())
 app.use(cors())
 
 const CONNECTION_URL = 'mongodb+srv://DAVID:d1PDwjEJNCcrSlDp@cluster0.x9nawhh.mongodb.net/?retryWrites=true&w=majority'

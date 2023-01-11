@@ -1,12 +1,12 @@
 import express  from 'express';
-import{ getVoitures ,getVoiture ,createVoiture } from '../controllers/voitures.js';
+import { getVoitures ,getVoiture ,createVoiture } from '../controllers/voitures.js';
 
-//http://localhost:5000/api/voitureRoutes
+//http://localhost:5000/api/voitureroutes
 
-const router = express.Router()
+const router = express.Router();
 
 router.get('/',getVoitures),
 router.get('/unevoiture',getVoiture),
 router.post('/cree',createVoiture)
 
-module.exports = router
+export default router

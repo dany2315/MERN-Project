@@ -13,9 +13,12 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 
+
+
 //use cors
 app.use(cors());
 app.listen(PORT,()=>{
+
     console.log(`server running in port:${PORT}`)});
 
 

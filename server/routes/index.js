@@ -1,11 +1,15 @@
 import express  from "express";
-import voitureroutes from './voitureRoutes.js';
-
+import voitureRoutes from './voitureRoutes.js';
+import userRoutes from './userRoutes.js'
 
 const router = express.Router();
 
 //http://localhost:5000/api
 
-router.get('/voitureRoutes',voitureroutes);
+
+
+router.use('/voitureRoutes',voitureRoutes);
+router.use('/userRoutes',userRoutes)
+
 
 export default router

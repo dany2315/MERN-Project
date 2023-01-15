@@ -1,4 +1,4 @@
-
+import Voiture from "../models/modelVoiture.js";
 
 
 export const getVoitures = (req,res) => {

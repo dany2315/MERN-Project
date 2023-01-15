@@ -1,8 +1,7 @@
-
 import mongoose from 'mongoose'
 
 
-const postSchema = mongoose.Schema({
+const schemaVoiture = mongoose.Schema({
 
       marque: String,
       modeles: String,
@@ -12,7 +11,7 @@ const postSchema = mongoose.Schema({
 
 });
 
-const Voiture = mongoose.model('Voiture',postSchema)
+const Voiture = mongoose.model('Voiture',schemaVoiture)
 
 export default Voiture; 
 

@@ -1,6 +1,8 @@
-export const getUsers = (req,res)=>{
 
-    res.send(`you are in a ${req.url}`)
+
+export const getUsers = (req,res)=>{
+    
+    res.send(`you are in a ${req.originalUrl} `)
 };
 
 export const getUser = (req,res)=>{

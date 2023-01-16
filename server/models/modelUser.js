@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import isEmail from "validator"
+import validator from "validator"
 
 
 const schemaUser = mongoose.Schema({
@@ -23,12 +23,11 @@ const schemaUser = mongoose.Schema({
     },
     mail:{
         type:String,
-        unique:true,
         validate:{
-            validator:isEmail,
-            message: `${value} invalid mail`,
-            isAsync:false,
-        },
+            validator :validator.isEmail,
+            message :` mail invalid`,
+            async : false
+        }
     },
     password:{
         type:String,
@@ -41,6 +40,7 @@ const schemaUser = mongoose.Schema({
 
 
 });
+
 
 const User = mongoose.model('User',schemaUser)
 

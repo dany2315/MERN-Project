@@ -5,7 +5,9 @@ import morgan from 'morgan';
 import router from './routes/index.js';
 
 
+
 //connection to mongoDB 
+
 
 const CONNECTION_URL = 'mongodb+srv://DAVID:d1PDwjEJNCcrSlDp@cluster0.x9nawhh.mongodb.net/?retryWrites=true&w=majority'
 

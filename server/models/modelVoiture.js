@@ -1,13 +1,22 @@
 import mongoose from 'mongoose'
+import { Schema } from 'mongoose';
 
+const schemaVoiture = new Schema({
 
-const schemaVoiture = mongoose.Schema({
+      marque:{
+            type:String,
+            uppercase:true
+      },
+      modele: {
+            type:String,
+            uppercase:true
 
-      marque: String,
-      modele: String,
-      annee: Number,
-      prix: Number,
-      src:String
+      },
+      src:{
+            type:String,
+            uppercase:true
+
+      }
 
 });
 

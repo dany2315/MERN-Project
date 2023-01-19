@@ -1,15 +1,25 @@
+import User from '../models/modelUser.js'
 
 
-export const getUsers = (req,res)=>{
+export const postUser = async(req, res)=> {
+            
     
-    res.send(`you are in a ${req.originalUrl} `)
-};
+   console.log({User});
+    
+    if(req.body.mail.validate===true){
+    
+        const user = await  User.create( req.body );
+        try{
+            res.status(200).send(user); 
+        } catch(error){
+            res.status(404).send(error);
+        }
+                
+    }else{
+        
+ 
 
-export const getUser = (req,res)=>{
-
-    res.send(`you are in a ${req.url}`)
-};
-
-export const getDateUser = (req,res)=>{
- res.send(`you are in a ${req.originalUrl}`)
-}
+    console.log(req.body.mail.validate);
+    
+   
+}}

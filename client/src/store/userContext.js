@@ -1,4 +1,5 @@
 import { createContext } from "react";
 
 
-export const [connect,setConnect] = createContext(false);
+
+export const userContext = createContext(false);

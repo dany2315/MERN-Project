@@ -1,29 +1,43 @@
-import React ,{useState ,useEffect, useContext} from "react";
-import  ReactDOM  from "react";
-import { Router, Routes ,Route } from 'react-router-dom';
-import userContext from'./store/userContext.js'
-import './app.css';
-import NavBar from "./layout";
+import React from "react";
+import { Routes ,Route ,Navigate} from 'react-router-dom';
 
-function App(params) {
+import './app.css';
+
+import NavBar from './layout/navBar.js';
+import Login from './pages/login.js';
+import Client from'./pages/client.js';
+import Vitrine from './pages/vitrine.js';
+import Admin from './pages/admin.js';
+
+
+
+function App() {
+
+
+const connect = true
 
 
     return(
+        
         <div>
-            <Router>
-                <userContext.Provider value={{connect,setConnect}}>
+            
                 <Routes>
-                    <Route element={<NavBar/>}>
-                        <Route path="/" element={<Vitrine />} />
-                        <Route path="login" element={<FeatureComponent />} />
-                        <Route path="client" {Connect ?element={<FeatureComponent />} :<Link to="login"/> }/>
-                        <Route path="admin" element={<FeatureComponent />} />
+                
+                    <Route path="/" element={<NavBar />} >
+                        <Route index element={<Vitrine/>}/>
+                        <Route path="client" element={ connect ? < Client/> : <Navigate to="/login" /> }/>
+                        <Route path="admin" element={<Admin />} />
+                        <Route path="login" element={<Login />} />
                     </Route>
-                </Routes>
-                </userContext.Provider>
+                    
+                    
+                    
 
-            </Router>
+                </Routes>
+
+            
         </div>
+      
     )
 
 }

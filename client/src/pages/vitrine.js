@@ -1,16 +1,19 @@
 import React from "react";
 import { Outlet } from "react-router";
 
-function NavBar (){
+
+function Vitrine (){
 
 
     return(
+
         <div>
-                <p>NavBar</p>
+                <h1>Vitrine</h1>
                 <Outlet />
+               
         </div>
     )
 
 }
 
-export default NavBar
+export default Vitrine

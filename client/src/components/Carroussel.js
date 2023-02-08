@@ -4,7 +4,7 @@ import { Paper, Button } from '@mui/material'
 import photo1 from '../assets/photo1.jpg'
 import photo2 from '../assets/photo2.jpg'
 import "./Carroussel.css"
-function Example(props)
+function CarouselFunc(props)
 {
     var items = [
         {
@@ -29,19 +29,26 @@ function Example(props)
     )
 }
 
+
 function Item(props)
 {
-    return (
-        <Paper elevation={4} >
-            <img src={props.item.src} alt="slide-img"  />
-            <h2 className="a">{props.item.name}</h2>
-            <p className="a">{props.item.description}</p>
+    
 
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
+    return (
+
+    
+        <Paper className='paperStyle' elevation={4} style={ backgroundImage: `url(${props.item.src})`}>
+            
+                <h2 className="a">{props.item.name}</h2>
+                <p className="a">{props.item.description}</p>
+
+                <Button className="CheckButton">
+                    Check it out!
+                </Button>
+            
         </Paper>
+    
     )
 }
 
-export default Example
+export default CarouselFunc

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Example from "../components/Carroussel.js";
+import CarouselFunc from "../components/Carroussel.js";
 
 
 
@@ -13,7 +13,7 @@ function Vitrine (){
 
         <div>
                 <p>vitrine</p>
-                <Example/>
+                <CarouselFunc/>
                
         </div>
     )

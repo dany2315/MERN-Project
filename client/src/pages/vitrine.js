@@ -1,5 +1,9 @@
 import React from "react";
-import { Outlet } from "react-router";
+
+import Example from "../components/Carroussel.js";
+
+
+
 
 
 function Vitrine (){
@@ -8,8 +12,8 @@ function Vitrine (){
     return(
 
         <div>
-                <h1>Vitrine</h1>
-                <Outlet />
+                <p>vitrine</p>
+                <Example/>
                
         </div>
     )

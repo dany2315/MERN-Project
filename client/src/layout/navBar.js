@@ -1,14 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router";
+import './navBar.css'
 
 function NavBar (){
 
 
     return(
-        <div>
+<>
+        <div className="navBar">
                 <p>NavBar</p>
-                <Outlet />
+                
+            <div className="barre"></div>
         </div>
+        
+        <Outlet />
+</>
     )
 
 }

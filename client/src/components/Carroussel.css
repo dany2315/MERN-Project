@@ -2,17 +2,18 @@
     text-align: center;
     
 }
-img{
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    width: 100%;
-    z-index: 1;
-}
+
 .a{
     z-index: 2345678;
 }
 .paperStyle{
-width: 80%;
+width: 90%;
+height: 80vh;
 margin: 0 auto;
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: top center;
+color: rgb(184, 182, 182);
+
 }

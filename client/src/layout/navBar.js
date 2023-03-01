@@ -1,16 +1,35 @@
 import React from "react";
 import { Outlet } from "react-router";
-import './navBar.css'
+import './NavBar.css'
+import SearchNavBar from "../components/SearchNavBar/SearchNavBar.js";
+import { Link } from "react-router-dom";
 
 function NavBar (){
-
 
     return(
 <>
         <div className="navBar">
-                <p>NavBar</p>
+            <div style={{marginTop:"1ch"}}>LOGO</div>
+
+
+            <div className="menu">
+
                 
-            <div className="barre"></div>
+                <Link to="/" className="menu-item">Acceuil</Link>
+                
+                <Link to="/" className="menu-item">produit</Link>
+            
+                <Link to="/" className="menu-item">service</Link>
+
+                <Link to="/" className="menu-item">contact</Link>
+                
+                
+
+            </div>
+
+            <SearchNavBar/>  
+                
+            
         </div>
         
         <Outlet />

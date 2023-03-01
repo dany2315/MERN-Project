@@ -2,10 +2,11 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
-import photo1 from '../assets/photo1.jpg'
-import photo2 from '../assets/photo2.jpg'
+import photo1 from '../../assets/photo1.jpg'
+import photo2 from '../../assets/photo2.jpg'
 import "./Carroussel.css"
-function CarouselFunc(props)
+
+function Carrousel(props)
 {
     var items = [
         {
@@ -59,7 +60,9 @@ function Item(props)
     return (
 
     
-        <Paper className='paperStyle' elevation={4} style={{backgroundImage: `url(${props.item.src})`}}>
+        <Paper className='paperStyle' elevation={4} 
+            style={{backgroundImage: `url(${props.item.src})`,
+                    textAlign:'center'}}>
             
                 <h2 className="a">{props.item.name}</h2>
                 <p className="a">{props.item.description}</p>
@@ -73,4 +76,4 @@ function Item(props)
     )
 }
 
-export default CarouselFunc
+export default Carrousel

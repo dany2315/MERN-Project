@@ -1,12 +1,27 @@
 .navBar{
-    height: 55px;
-    text-align: center;
-    
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 10ch;
+    background-color: rgba(101, 54, 54, 0.15);
+    padding:2ch ;
+    width:auto;
   
 }
-.barre{
-   margin: 0px 30px;
-     
-    height: 1px;
-    background-color: black;
+.menu{
+    
+    margin: auto;
+    padding: auto;
 }
+
+.menu-item{
+    text-decoration: none;
+    margin: 0ch 2ch;
+    color: black;
+}
+.menu-item:hover{
+    color: rgb(191, 172, 141);
+    text-decoration-line:overline ;
+}
+

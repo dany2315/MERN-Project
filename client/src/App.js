@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 
-import NavBar from './layout/navBar.js';
-import Login from './pages/login.js';
-import Client from'./pages/client.js';
-import Vitrine from './pages/vitrine.js';
-import Admin from './pages/admin.js';
+import NavBar from './layout/NavBar.js';
+import Login from './pages/Login.js';
+import Client from'./pages/Client.js';
+import Vitrine from './pages/Vitrine.js';
+import Admin from './pages/Admin.js';
 import Menu from './pages/menu.js'
 
 

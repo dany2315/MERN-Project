@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     height: 10ch;
-    background-color: rgba(101, 54, 54, 0.15);
+    background-color: #EBEBE2;
     padding:2ch ;
     width:auto;
   
@@ -18,10 +18,31 @@
 .menu-item{
     text-decoration: none;
     margin: 0ch 2ch;
-    color: black;
+    color: #007193;
 }
 .menu-item:hover{
-    color: rgb(191, 172, 141);
+    color: #b98077;
     text-decoration-line:overline ;
+}
+.login{
+    padding:1ch ;
+}
+.seConnecter{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #007193;
+    box-sizing: content-box;
+    text-decoration: none;
+    border-bottom: solid;
+    padding-bottom: 3px;
+    border-bottom-width: 1.5px;
+
+}
+.seConnecter:hover{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b98077;
+    text-decoration-line:overline ;
+    border-bottom: none;
 }
 

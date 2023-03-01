@@ -5,13 +5,13 @@ import Carrousel from "../components/Carroussel/Carroussel.js";
 
 
 
-function Vitrine (){
+function Acceuil (){
 
 
     return(
 
         <div>
-                <p>vitrine</p>
+                <p>Acceuil</p>
                 <Carrousel/>
                
         </div>
@@ -19,4 +19,4 @@ function Vitrine (){
 
 }
 
-export default Vitrine
+export default Acceuil

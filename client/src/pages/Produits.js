@@ -1,4 +1,4 @@
-function Produit () {
+function Produits () {
     return(
     <div>
         Produit
@@ -7,4 +7,4 @@ function Produit () {
     )
     
       }
-    export default Produit
+    export default Produits

@@ -1,10 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router";
 import './NavBar.css'
-import SearchNavBar from "../components/SearchNavBar/SearchNavBar.js";
+import SearchNavBar from "../../components/SearchNavBar/SearchNavBar.js";
 import { Link } from "react-router-dom";
+import { Avatar } from "@mui/material";
 
 function NavBar (){
+    const connect = false
+
 
     return(
 <>
@@ -17,7 +20,7 @@ function NavBar (){
                 
                 <Link to="/" className="menu-item">Acceuil</Link>
                 
-                <Link to="produit" className="menu-item">produit</Link>
+                <Link to="produits" className="menu-item">produits</Link>
             
                 <Link to="services" className="menu-item">services</Link>
 
@@ -27,14 +30,19 @@ function NavBar (){
 
             </div>
 
-            <SearchNavBar/>  
-            <div className="login">
-                <Link to="Login" className="seConnecter">se connecter</Link>
+            <div className="search">
+                <SearchNavBar/> 
             </div>
-            
+
+            {connect ?  <div className="connecter">
+                            <Link to="profil" className="avatar"><Avatar></Avatar></Link>
+                        </div>
+                     :  <div className="login">
+                            <Link to="login" className="seConnecter">Se connecter</Link>
+                        </div>
+            }                   
 
                 
-            
         </div>
         
         <Outlet />

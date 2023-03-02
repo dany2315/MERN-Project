@@ -11,7 +11,7 @@
 }
 .menu{
     
-    margin: auto;
+    margin:1ch 19ch 0ch auto ;
     padding: auto;
 }
 
@@ -24,8 +24,16 @@
     color: #b98077;
     text-decoration-line:overline ;
 }
-.login{
+.search{
+    margin-right:1ch;
+}
+.connecter{
     padding:1ch ;
+    margin-right:2ch ;
+    margin-left: 3ch;
+}
+.login{
+    padding:1.5ch 0ch ;
 }
 .seConnecter{
     font-size: large;
@@ -45,4 +53,10 @@
     text-decoration-line:overline ;
     border-bottom: none;
 }
+
+
+
+
+
+
 

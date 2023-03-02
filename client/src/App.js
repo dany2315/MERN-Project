@@ -4,21 +4,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 
-import NavBar from './layout/NavBar.js';
-import Login from './pages/Login.js';
+import NavBar from './layout/NavBar/NavBar.js';
+import Login from './pages/Login/Login.js';
 import Client from'./pages/Client.js';
 import Acceuil from './pages/Acceuil.js';
 import Admin from './pages/Admin.js';
-import Menu from './pages/menu.js'
-import Produit from "./pages/Produits";
+import Produits from "./pages/Produits";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
-
+import Profil from "./pages/Profil"
 
 function App() {
 
 
-const connect = true
+const connect = false
 
 
     return(
@@ -29,19 +28,18 @@ const connect = true
                 
                     <Route path="/" element={<NavBar/>} >
                         <Route index element={<Acceuil/>}/>
-                        <Route path="produit" element={<Produit />} />
+                        <Route path="produits" element={<Produits />} />
                         <Route path="services" element={<Services />} />
                         <Route path="contact" element={<Contact />} />
 
+                        <Route path="profil" element={ connect ? < Profil/> : <Navigate to="/login" /> }/>
+
                         <Route path="client" element={ connect ? < Client/> : <Navigate to="/login" /> }/>
                         <Route path="admin" element={<Admin />} />
-                        <Route path="login" element={<Login />} />
+                        <Route path="login" element={connect ? <Navigate to="/" /> :<Login />} />
                     </Route>
-                    <Route path="menu" element={<Menu/>}/>
                     
                     
-                    
-
                 </Routes>
 
             

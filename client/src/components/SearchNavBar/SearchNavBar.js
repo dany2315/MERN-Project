@@ -34,7 +34,7 @@ const Search = styled('div')(({ theme }) => ({
   
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
     backgroundColor:'rgba(101, 54, 54, 0.15)',
-    color: 'inherit',
+    color: '#007193',
     textAlign:'left',
     borderRadius:'4px',
     '& .MuiInputBase-input': {
@@ -88,10 +88,7 @@ return(
     </div>
         
         
-        
-        
-        
-     
+  
 </>
     )
 }

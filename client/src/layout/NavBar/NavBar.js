@@ -12,7 +12,7 @@ function NavBar (){
     return(
 <>
         <div className="navBar">
-            <div style={{marginTop:"1ch", color:"#007193"}}>LOGO</div>
+            <div style={{marginTop:"1ch", color:"#007193" , marginRight:"2%"}}>LOGO</div>
 
 
             <div className="menu">
@@ -44,8 +44,9 @@ function NavBar (){
 
                 
         </div>
-        
-        <Outlet />
+        <div className="outlet">
+            <Outlet />
+        </div>
 </>
     )
 

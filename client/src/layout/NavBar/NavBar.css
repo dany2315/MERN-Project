@@ -1,23 +1,23 @@
 .navBar{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    height: 10ch;
+    height:25vh;
     background-color: #EBEBE2;
-    padding:2ch ;
-    width:auto;
+    padding:4vh 1vw ;
+    
   
 }
 .menu{
-    
-    margin:1ch 19ch 0ch auto ;
-    padding: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
 }
 
 .menu-item{
     text-decoration: none;
-    margin: 0ch 2ch;
+    padding: 1ch 2em;
     color: #007193;
 }
 .menu-item:hover{
@@ -25,7 +25,7 @@
     text-decoration-line:overline ;
 }
 .search{
-    margin-right:1ch;
+    margin-right:1;
 }
 .connecter{
     padding:1ch ;
@@ -33,7 +33,8 @@
     margin-left: 3ch;
 }
 .login{
-    padding:1.5ch 0ch ;
+    padding: 1% ;
+    
 }
 .seConnecter{
     font-size: large;
@@ -52,6 +53,9 @@
     color: #b98077;
     text-decoration-line:overline ;
     border-bottom: none;
+}
+.outlet{
+    width: 100vw;
 }
 
 

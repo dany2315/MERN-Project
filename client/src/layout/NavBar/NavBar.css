@@ -7,17 +7,23 @@
     background-color: #EBEBE2;
     padding:2ch ;
     width:auto;
+    align-items: center;
   
+}
+.logo{
+    margin-top: 1ch;
+    margin-right: 34ch;
+    color:#007193;
 }
 .menu{
     
-    margin:1ch 19ch 0ch auto ;
+    margin:1ch auto 0ch auto ;
     padding: auto;
 }
 
 .menu-item{
     text-decoration: none;
-    margin: 0ch 2ch;
+    margin: 0ch 3ch;
     color: #007193;
 }
 .menu-item:hover{
@@ -54,7 +60,38 @@
     border-bottom: none;
 }
 
+.burger{
+    margin-left: 1ch;
+    padding: 0%;
+    background-color:#EBEBE2;
+    border: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: #007193;
+}
 
+.burger:active{
+background-color:#b98077;
+}
+
+
+@media screen and (max-width: 1100px) {
+   
+  
+    .menu {
+        position: absolute;
+        flex-direction: column;
+      
+    }
+  
+    .menu-item {
+      
+    }
+  
+    .search, .connecter, .login {
+     
+    }
+  }
 
 
 

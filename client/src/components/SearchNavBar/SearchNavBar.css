@@ -1,7 +1,12 @@
+.searchNavbar{
+    position: relative;
+}
 .inputSearch{
     margin-top: 1ch;
 }
 .container{
+    position: absolute;
+    margin-left: 2.5ch;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -9,6 +14,7 @@
     
 }
 .item-suggestion{
+
     width: 12ch;
     border-radius: 4px;
     background-color: rgba(101, 54, 54, 0.15);

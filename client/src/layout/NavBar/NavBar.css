@@ -80,6 +80,9 @@ background-color:#b98077;
   
     .menu {
         position: absolute;
+        top: 4px;
+        right: -90px;
+        display: flex;
         flex-direction: column;
       
     }

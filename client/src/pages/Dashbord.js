@@ -1,15 +1,15 @@
 import React from "react";
 
 
-function Client (){
+function Dashbord (){
 
 
     return(
         <div>
-                <h1>Client</h1>
+                <h1>Dashbord</h1>
         </div>
     )
 
 }
 
-export default Client
+export default Dashbord

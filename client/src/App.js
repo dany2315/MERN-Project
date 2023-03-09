@@ -6,7 +6,7 @@ import './app.css';
 
 import NavBar from './layout/NavBar/NavBar.js';
 import Login from './pages/Login/Login.js';
-import Client from'./pages/Client.js';
+import Dashbord from'./pages/Dashbord.js';
 import Acceuil from './pages/Acceuil.js';
 import Admin from './pages/Admin.js';
 import Produits from "./pages/Produits";
@@ -34,7 +34,7 @@ const connect = false
 
                         <Route path="profil" element={ connect ? < Profil/> : <Navigate to="/login" /> }/>
 
-                        <Route path="client" element={ connect ? < Client/> : <Navigate to="/login" /> }/>
+                        <Route path="dashbord" element={ connect ? < Dashbord/> : <Navigate to="/login" /> }/>
                         <Route path="admin" element={<Admin />} />
                         <Route path="login" element={connect ? <Navigate to="/" /> :<Login />} />
                     </Route>

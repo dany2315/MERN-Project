@@ -77,9 +77,12 @@ background-color:#b98077;
 
 @media screen and (max-width: 1100px) {
    
-  
+  .logo{
+    margin-right: 1ch;
+  }
+
     .menu {
-        position: absolute;
+        position: fixed;
         top: 4px;
         right: -90px;
         display: flex;

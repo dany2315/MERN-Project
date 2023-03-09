@@ -66,7 +66,7 @@ function SearchNavBar() {
 return(
 <>
     <div className='searchNavbar'>
-        <Search className='inputSearch'>
+        <Search >
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>

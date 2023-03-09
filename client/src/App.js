@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes ,Route ,Navigate} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './app.css';
+import './App.css';
 
 
 import NavBar from './layout/NavBar/NavBar.js';

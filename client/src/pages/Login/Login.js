@@ -1,39 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import'./Login.css'
-import FormControl from '@mui/material/FormControl';
-import FormHelperText from '@mui/material/FormHelperText';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
+import Box from '@mui/material/Box';
+import LoadingButton from '@mui/lab/LoadingButton';
+import FormError from "../../components/Form/FormError";
+import FormStandard from "../../components/Form/FormStandard";
+import  { verifuser } from "../../Controller/User";
 
 function Login (){
 
+    const [userPrev,setuserPrev] = useState({
+        identifiant:"",
+        password:""
+    })
+    const [loading, setLoading] = React.useState(false);
+    const [form,setForm] = useState(true)
+  
+
+
+
+    function handleChangeIdentifiant(value) {
+        setuserPrev({...userPrev,identifiant:value.toLowerCase()})
+        console.log('identifiant',userPrev);
+        
+    }
+    function handleChangePassword(value) {
+        setuserPrev({...userPrev,password:value.toLowerCase()})
+        console.log('password' , userPrev);
+    }
+
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        setLoading(true);
+        
+        console.log({userPrev});
+        const user = await verifuser(userPrev)
+        
+    }
+
+
 
     return(
+        
         <div className="loginDiv">
-                <div className="cardLogin">
-                <FormControl error variant="standard">
-                    <InputLabel htmlFor="component-error">Name</InputLabel>
-                    <Input
-                    id="component-error"
-                    defaultValue="Composed TextField"
-                    aria-describedby="component-error-text"
-                    />
-                    <FormHelperText id="component-error-text">Error</FormHelperText>
-                </FormControl>
+                <form onSubmit={handleSubmit} className="cardLogin">
+                    <div className="form">
+                    {form ? <FormStandard  changePassword={handleChangePassword} changeIdentifiant={handleChangeIdentifiant}/>
+                        :<FormError  changePassword={handleChangePassword} changeIdentifiant={handleChangeIdentifiant}/>}
+                    </div>
 
-                <FormControl variant="standard">
-                    <InputLabel htmlFor="component-helper">Name</InputLabel>
-                    <Input
-                    id="component-helper"
-                    defaultValue="Composed TextField"
-                    aria-describedby="component-helper-text"
-                    />
-                    <FormHelperText id="component-helper-text">
-                    Some important helper text
-                    </FormHelperText>
-                </FormControl>
-                </div>
+                    <Box className="but">
+                        <LoadingButton
+                            type="submit"
+                            size="small"
+                            loading={loading}
+                            loadingIndicator="Loading…"
+                            variant="outlined"
+                            >
+                            <span>se connecter</span>
+                        </LoadingButton>
+                    </Box>
+                </form>
         </div>
+    
     )
 
 }

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
-import {verifVoiture} from '../../services/logiqueNavBar.js'
+import {verifVoiture} from '../../Controller/SearchSuggestion.js'
 import './SearchNavBar.css'
 
 

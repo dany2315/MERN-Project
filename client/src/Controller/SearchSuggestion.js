@@ -10,9 +10,8 @@ export function verifVoiture (value)  {
         return resultats
     }return resultats
     
-
-
-
 }
+
+
 
 

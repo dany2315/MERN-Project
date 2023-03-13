@@ -4,6 +4,7 @@
 
 }
 .cardLogin{
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
     width: 35ch;
@@ -11,6 +12,13 @@
     border: solid ;
     border-width: 1px;
     border-radius: 15px;
-    
     margin-top: 8ch;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0ch 3ch;
+}
+.but{
+    padding: 0ch 10ch;
 }

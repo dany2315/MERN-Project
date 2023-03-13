@@ -6,7 +6,7 @@ import { postUser } from '../controllers/user.js'
 const router = express.Router();
 
 router.post('/',postUser);
-//router.get('/unUser',getUser);
+router.get('/unUser',getUser);
 //router.get('/dateAnniv',getDateUser);
 
 

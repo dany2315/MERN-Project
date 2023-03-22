@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Outlet } from "react-router";
 import './NavBar.css'
 import SearchNavBar from "../../components/SearchNavBar/SearchNavBar.js";
 import { Link } from "react-router-dom";
@@ -59,7 +58,7 @@ useEffect(()=>{
                 
         </div>
         
-        <Outlet />
+        
 </>
     )
 

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 
-import NavBar from './layout/NavBar/NavBar.js';
+import MainLayout from './layout/MainLayout/index.js';
 import Login from './pages/Login/Login.js';
 import Dashbord from'./pages/Dashbord.js';
 import Acceuil from './pages/Acceuil.js';
@@ -26,7 +26,7 @@ const connect = false
             
                 <Routes>
                 
-                    <Route path="/" element={<NavBar/>} >
+                    <Route path="/" element={<MainLayout/>} >
                         <Route index element={<Acceuil/>}/>
                         <Route path="produits" element={<Produits />} />
                         <Route path="services" element={<Services />} />

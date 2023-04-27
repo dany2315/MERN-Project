@@ -6,16 +6,16 @@ import { Avatar } from "@mui/material";
 
 import { Divide  } from 'hamburger-react'
 
-function NavBar (){
+function NavBar ({handleLeftDrawerToggle}){
     const width = window.innerWidth
 
-    const connect = false
+    const isLogged = false
 
 useEffect(()=>{
     if (width<=1100) {
         console.log(width)
     }
-})
+},[])
 
 
     return(
@@ -23,6 +23,11 @@ useEffect(()=>{
         <div className="navBar">
             <div className="logo" style={{marginTop:"1ch", color:"#007193"}}>LOGO</div>
 
+            <button className="burger"  >
+                
+                <Divide size={20} duration={0.8} color='#007193' onClick={handleLeftDrawerToggle}></Divide>
+                
+             </button> 
 
             <div className="menu">
 
@@ -43,17 +48,14 @@ useEffect(()=>{
                 <SearchNavBar/> 
             </div>
 
-            {connect ?  <div className="connecter">
+            {isLogged ?  <div className="connecter">
                             <Link to="profil" className="avatar"><Avatar></Avatar></Link>
                         </div>
                      :  <div className="login">
                             <Link to="login" className="seConnecter">Se connecter</Link>
                         </div>
             }     
-            <button className="burger"  >
-                
-               <Divide size={20} duration={0.8} color='#007193' ></Divide>
-            </button>              
+                         
 
                 
         </div>

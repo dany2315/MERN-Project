@@ -9,7 +9,7 @@ import './SearchNavBar.css'
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
-    borderRadius: theme.shape.borderRadius,
+    borderRadius: '23px',
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
       backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -36,13 +36,17 @@ const Search = styled('div')(({ theme }) => ({
     backgroundColor:'rgba(101, 54, 54, 0.15)',
     color: 'inherit',
     textAlign:'left',
-    borderRadius:'4px',
+    borderRadius:'18px',
     '& .MuiInputBase-input': {
       padding: theme.spacing(1, 1, 1, 0),
       // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       //transition: theme.transitions.create('width'),
       width: '12ch',
+      [theme.breakpoints.up('xs')]: {
+       
+        width: '0.1px',
+      },
     
     },
   }));
@@ -52,7 +56,7 @@ const Search = styled('div')(({ theme }) => ({
 //le composant searchAppBar propose des mot cle en pleine recherche ux mui
 function SearchNavBar() {
     
-  
+    const [open,setOpen] = useState();
     const [resultats,setResultats] = useState([]);
 
     const handleChange = (event) =>{
@@ -71,7 +75,8 @@ return(
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              
+              
               inputProps={{ 'aria-label': 'search' }}
               onChange={handleChange}
             />

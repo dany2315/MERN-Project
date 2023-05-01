@@ -1,0 +1,97 @@
+.navBar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 10ch;
+    background-color: #EBEBE2;
+    padding:2ch ;
+    width:auto;
+    align-items: center;
+    z-index:2000000;
+  
+}
+.logo{
+    margin-top: 1ch;
+    margin-right: 24ch;
+    color:#007193;
+}
+.menu{
+    
+    margin:1ch auto 0ch auto ;
+    padding: auto;
+}
+
+.menu-item{
+    text-decoration: none;
+    margin: 0ch 3ch;
+    color: #007193;
+}
+.menu-item:hover{
+    color: #b98077;
+    text-decoration-line:overline ;
+}
+.search{
+    margin-top: 1ch;
+    margin-right:1ch;
+}
+.connecter{
+    padding:1ch ;
+    margin-right:2ch ;
+    margin-left: 3ch;
+}
+.login{
+    padding:1.5ch 0ch ;
+}
+.seConnecter{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #007193;
+    text-decoration: none;
+    border-bottom: solid;
+    padding-bottom: 3px;
+    border-bottom-width: 1.5px;
+
+}
+.seConnecter:hover{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b98077;
+    text-decoration-line:overline ;
+    border-bottom: none;
+}
+
+.burger{
+
+    padding: 0%;
+    background-color:#EBEBE2;
+    border: solid;
+    border-radius: 4px;
+    border-width: 2px;
+    border-color: #007193;
+}
+
+.burger:active{
+background-color:#b98077;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .navBar{
+        padding: 2ch 1ch;
+    }
+    .logo{
+        margin-right: 1ch;
+    }
+
+   
+  
+    
+  }
+
+
+
+
+

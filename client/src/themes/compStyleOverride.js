@@ -108,7 +108,7 @@ export default function componentStyleOverrides(theme) {
                         borderColor: theme.colors?.grey400
                     },
                     '&:hover $notchedOutline': {
-                        borderColor: theme.colors?.primaryLight
+                        borderColor: theme.colors?.yellowLight
                     },
                     '&.MuiInputBase-multiline': {
                         padding: 1

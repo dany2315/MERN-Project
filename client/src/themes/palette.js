@@ -16,6 +16,10 @@ export default function themePalette(theme) {
             200: theme.colors?.primary200,
             800: theme.colors?.primary800
         },
+        yellow:{
+            light: '#ffeb3b',
+            main:theme.colors?.darkLevel1 ,
+        },
         secondary: {
             light: theme.colors?.secondaryLight,
             main: theme.colors?.secondaryMain,

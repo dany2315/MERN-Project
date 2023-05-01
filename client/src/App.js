@@ -9,7 +9,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 import './App.css';
 
-import MainLayout from './layout/MainLayout/index.js';
+import MainLayout from './MainLayout/index.js';
 import Login from './pages/Login/Login.js';
 import Dashbord from './pages/Dashbord.js';
 import Acceuil from './pages/Acceuil.js';
@@ -24,6 +24,9 @@ const App = () => {
   const customization = useSelector((state) => state.customization);
 
   return (
+
+
+    
     <ThemeProvider theme={themes(customization)}>
       <Routes>
         <Route path='/' element={<MainLayout />}>

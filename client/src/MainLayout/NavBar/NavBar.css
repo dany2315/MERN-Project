@@ -86,15 +86,7 @@ background-color:#b98077;
         margin-right: 1ch;
     }
 
-    .menu {
-        background-color:#EBEBE2 ;
-        position: fixed;
-        top: 4px;
-        right: -130px;
-        display: flex;
-        flex-direction: column;
-      
-    }
+   
   
     
   }

@@ -2,8 +2,8 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
-import photo1 from '../../assets/photo1.jpg'
-import photo2 from '../../assets/photo2.jpg'
+import photo1 from '../../assets/image/photo1.jpg'
+import photo2 from '../../assets/image/photo2.jpg'
 import "./Carroussel.css"
 
 function Carrousel(props)
